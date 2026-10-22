@@ -1,8 +1,25 @@
 # Case Switcher
 
-Easily toggle text between camelCase, PascalCase, snake_case, CONSTANT_CASE, and kebab-case.
+**Автор:** Мищенко Кирилл (M3114)  
+Плагин для VS Code, который позволяет быстро менять стиль написания переменных по кругу прямо в редакторе.
 
-## Features
+## Что умеет плагин
 
-- Cycle through 5 popular naming conventions with a single command.
-- Supports selection transformation in any active editor tab.
+- Переключает регистр выделенного слова по кругу между 5 популярными стилями.
+- Работает через горячие клавиши или палитру команд.
+- Не ломает структуру слова: корректно разбирает составные части и склеивает их в новый формат.
+
+## Поддерживаемые стили
+
+Переключение происходит в следующем порядке:
+1. `camelCase`
+2. `PascalCase`
+3. `snake_case`
+4. `CONSTANT_CASE`
+5. `kebab-case`
+
+## Как пользоваться
+
+1. Выделите нужную переменную курсором.
+2. Нажмите сочетание клавиш **`Alt + Shift + C`** (для macOS: `Cmd + Shift + C`).
+3. Либо откройте палитру команд (`Ctrl + Shift + P`) и запустите команду **`Case Switcher: Cycle Next Case`**.
